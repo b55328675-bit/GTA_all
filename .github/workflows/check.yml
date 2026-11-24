@@ -1,0 +1,44 @@
+name: Check
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Syntax check data and scripts
+        run: |
+          set -e
+          node --check data/games.js
+          node --check data/modpacks.js
+          node --check assets/js/app.js
+
+      - name: Validate manifests
+        run: |
+          set -e
+          for f in mods/manifests/*.json; do
+            jq -e '.id and .zipName and .game.exe and (.mods|type=="array")' "$f" > /dev/null
+          done
+          echo "manifests OK"
+
+      - name: Rebuild packs and verify dist is up to date
+        run: |
+          set -e
+          ./mods/build-packs.sh
+          if [ -n "$(git status --porcelain dist)" ]; then
+            echo "::error::dist/ is out of date. Run ./mods/build-packs.sh and commit the result."
+            git --no-pager diff --stat dist
+            exit 1
+          fi

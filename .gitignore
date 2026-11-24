@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Build / temp
+mods/_downloads/
+mods/**/_downloads/
+mods/**/backup_*/
+mods/**/install.log
+mods/**/uninstall.log
+mods/**/installed-files.txt
+mods/**/MANUAL-STEPS.txt
+mods/build/
+build/
+dist/*.tmp
+*.zip.tmp
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Logs
+*.log
+npm-debug.log*

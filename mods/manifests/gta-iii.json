@@ -1,0 +1,199 @@
+{
+  "id": "gta-iii",
+  "name": "GTA III — Classic HD",
+  "version": "1.0.0",
+  "zipName": "GTA_III_RU_60FPS.zip",
+  "game": {
+    "title": "Grand Theft Auto III",
+    "exe": [
+      "gta3.exe"
+    ],
+    "steamFolders": [
+      "Grand Theft Auto III"
+    ],
+    "steamAppId": 12100
+  },
+  "mods": [
+    {
+      "id": "asi-loader",
+      "name": "Ultimate ASI Loader",
+      "author": "ThirteenAG",
+      "license": "MIT",
+      "url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/download/v10.0.5/Ultimate-ASI-Loader.zip",
+      "size": 7086088,
+      "install": [
+        {
+          "from": "dinput8.dll",
+          "to": "dinput8.dll"
+        }
+      ],
+      "note": "Загрузчик .asi-плагинов."
+    },
+    {
+      "id": "silentpatch",
+      "name": "SilentPatch III",
+      "author": "CookiePLMonster",
+      "license": "MIT",
+      "url": "https://github.com/CookiePLMonster/SilentPatch/releases/download/1.1-BUILD34.1-SA/SilentPatchIII.zip",
+      "size": 117911,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Сотни исправлений для GTA III."
+    },
+    {
+      "id": "widescreen",
+      "name": "WidescreenFix III",
+      "author": "ThirteenAG",
+      "license": "MIT",
+      "url": "https://github.com/ThirteenAG/WidescreenFixesPack/releases/download/gta3/GTA3.WidescreenFix.zip",
+      "size": 7835621,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "16:9, 16:10 и 21:9 без растяжения."
+    },
+    {
+      "id": "project2dfx",
+      "name": "Project2DFX III",
+      "author": "ThirteenAG",
+      "license": "MIT",
+      "url": "https://github.com/ThirteenAG/III.VC.SA.IV.Project2DFX/releases/download/gta3/III.Project2DFX.zip",
+      "size": 3978132,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Короны огней на дальних объектах."
+    },
+    {
+      "id": "skygfx",
+      "name": "SkyGfx III/VC",
+      "author": "aap / The Hero",
+      "license": "MIT",
+      "url": "https://github.com/aap/skygfx_vc/releases/download/v3.0b/SkyGfx_III_VC_3.0b.zip",
+      "size": 559015,
+      "install": [
+        {
+          "from": "d3d8.dll",
+          "to": "d3d8.dll"
+        },
+        {
+          "from": "rwd3d9.dll",
+          "to": "rwd3d9.dll"
+        },
+        {
+          "from": "skygfx.asi",
+          "to": "scripts/skygfx.asi"
+        },
+        {
+          "from": "III/skygfx.ini",
+          "to": "scripts/skygfx.ini"
+        },
+        {
+          "from": "III/neo/*",
+          "to": "scripts/neo/"
+        }
+      ],
+      "exclude": [
+        "README*",
+        "*.md",
+        "*.txt"
+      ],
+      "note": "Графика PS2/Xbox. d3d8.dll и rwd3d9.dll — в корень, skygfx.asi, skygfx.ini и neo/ — в папку scripts."
+    },
+    {
+      "id": "cleo",
+      "name": "CLEO 2.2.0 для III",
+      "author": "cleolibrary",
+      "license": "MIT",
+      "url": "https://github.com/cleolibrary/III.VC.CLEO/releases/download/v2.2.0/III.CLEO-v2.2.0.zip",
+      "size": 407656,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Платформа для CLEO-скриптов."
+    },
+    {
+      "id": "modloader",
+      "name": "ModLoader",
+      "author": "thelink2012",
+      "license": "MIT",
+      "url": "https://github.com/thelink2012/modloader/releases/download/v0.3.10/modloader.zip",
+      "size": 2691555,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Установка модов папками, без замены файлов."
+    },
+    {
+      "id": "framerate-manual",
+      "name": "Framerate Vigilante (III/VC/SA)",
+      "author": "Junior_Djjr",
+      "license": "MIT",
+      "url": "https://www.mixmods.com.br/2022/08/iii-vc-sa-framerate-vigilante/",
+      "manual": true,
+      "note": "Для идеальной физики на 60 FPS скачайте вручную с MixMods."
+    }
+  ],
+  "config": [
+    {
+      "file": "scripts/GTA3.WidescreenFix.ini",
+      "values": {
+        "ResX": "1920",
+        "ResY": "1080",
+        "ForceMultiSamplingLevel": "0"
+      }
+    }
+  ],
+  "localization": {
+    "title": "Русская озвучка «Правильный перевод» v1.2",
+    "url": "https://libertycity.net/files/gta-3/123117-russian-voiceover-v1.2.html",
+    "note": "Полная любительская озвучка сюжета и радио; альтернатива — WuzVoice (2022). Текст — SanLtd/1C."
+  },
+  "notes": "Для 60 FPS включите в игре Frame Limiter: SilentPatch поднимет планку до 30, а для стабильных 60 установите Framerate Vigilante вручную. Пак рассчитан на Steam-версию."
+}

@@ -1,0 +1,218 @@
+{
+  "id": "gta-vc",
+  "name": "GTA Vice City — Neon HD",
+  "version": "1.0.0",
+  "zipName": "GTA_VC_RU_60FPS.zip",
+  "game": {
+    "title": "Grand Theft Auto: Vice City",
+    "exe": [
+      "gta-vc.exe"
+    ],
+    "steamFolders": [
+      "Grand Theft Auto Vice City"
+    ],
+    "steamAppId": 12110
+  },
+  "mods": [
+    {
+      "id": "asi-loader",
+      "name": "Ultimate ASI Loader",
+      "author": "ThirteenAG",
+      "license": "MIT",
+      "url": "https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases/download/v10.0.5/Ultimate-ASI-Loader.zip",
+      "size": 7086088,
+      "install": [
+        {
+          "from": "dinput8.dll",
+          "to": "dinput8.dll"
+        }
+      ],
+      "note": "Загрузчик .asi-плагинов."
+    },
+    {
+      "id": "silentpatch",
+      "name": "SilentPatch VC",
+      "author": "CookiePLMonster",
+      "license": "MIT",
+      "url": "https://github.com/CookiePLMonster/SilentPatch/releases/download/1.1-BUILD34.1-SA/SilentPatchVC.zip",
+      "size": 184185,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Исправления мыши, физики и вылетов."
+    },
+    {
+      "id": "widescreen",
+      "name": "WidescreenFix VC",
+      "author": "ThirteenAG",
+      "license": "MIT",
+      "url": "https://github.com/ThirteenAG/WidescreenFixesPack/releases/download/gtavc/GTAVC.WidescreenFix.zip",
+      "size": 7886831,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "16:9, 16:10 и 21:9 без растяжения."
+    },
+    {
+      "id": "project2dfx",
+      "name": "Project2DFX VC",
+      "author": "ThirteenAG",
+      "license": "MIT",
+      "url": "https://github.com/ThirteenAG/III.VC.SA.IV.Project2DFX/releases/download/gtavc/VC.Project2DFX.zip",
+      "size": 3975047,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Короны огней на дальних объектах."
+    },
+    {
+      "id": "skygfx",
+      "name": "SkyGfx III/VC",
+      "author": "aap / The Hero",
+      "license": "MIT",
+      "url": "https://github.com/aap/skygfx_vc/releases/download/v3.0b/SkyGfx_III_VC_3.0b.zip",
+      "size": 559015,
+      "install": [
+        {
+          "from": "d3d8.dll",
+          "to": "d3d8.dll"
+        },
+        {
+          "from": "rwd3d9.dll",
+          "to": "rwd3d9.dll"
+        },
+        {
+          "from": "skygfx.asi",
+          "to": "scripts/skygfx.asi"
+        },
+        {
+          "from": "VC/skygfx.ini",
+          "to": "scripts/skygfx.ini"
+        },
+        {
+          "from": "VC/neo/*",
+          "to": "scripts/neo/"
+        }
+      ],
+      "exclude": [
+        "README*",
+        "*.md",
+        "*.txt"
+      ],
+      "note": "Графика PS2/Xbox. d3d8.dll и rwd3d9.dll — в корень, skygfx.asi, skygfx.ini и neo/ — в папку scripts."
+    },
+    {
+      "id": "cleo",
+      "name": "CLEO 2.2.0 для VC",
+      "author": "cleolibrary",
+      "license": "MIT",
+      "url": "https://github.com/cleolibrary/III.VC.CLEO/releases/download/v2.2.0/VC.CLEO-v2.2.0.zip",
+      "size": 408166,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Платформа для CLEO-скриптов."
+    },
+    {
+      "id": "modloader",
+      "name": "ModLoader",
+      "author": "thelink2012",
+      "license": "MIT",
+      "url": "https://github.com/thelink2012/modloader/releases/download/v0.3.10/modloader.zip",
+      "size": 2691555,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Установка модов папками, без замены файлов."
+    },
+    {
+      "id": "framerate",
+      "name": "Framerate Vigilante VC (Fixed)",
+      "author": "Junior_Djjr / shaneomac1337",
+      "license": "MIT",
+      "url": "https://github.com/shaneomac1337/FramerateVigilante-Fixed/releases/download/v2.0-fixed/FramerateVigilante-VC-v2.0-Fixed.zip",
+      "size": 313304,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "60 FPS без сломанной физики."
+    }
+  ],
+  "config": [
+    {
+      "file": "scripts/GTAVC.WidescreenFix.ini",
+      "values": {
+        "ResX": "1920",
+        "ResY": "1080",
+        "ForceMultiSamplingLevel": "0"
+      }
+    },
+    {
+      "file": "FramerateVigilante.ini",
+      "values": {
+        "FPSlimit": "60",
+        "RefreshRate": "60"
+      }
+    }
+  ],
+  "localization": {
+    "title": "Русская озвучка GamesVoice",
+    "url": "https://libertycity.net/files/gta-vice-city/219084-professional-russian-voice-acting-for-gta-vice-city-by-gamesvoice.html",
+    "note": "Студийная озвучка; подходит для оригинала и Definitive Edition."
+  },
+  "notes": "В настройках игры включите Frame Limiter — Framerate Vigilante поднимет ограничение до 60 FPS. Пак рассчитан на Steam-версию."
+}
