@@ -1,0 +1,21 @@
+{
+  "id": "gta-v",
+  "name": "GTA V — Story Mode Starter",
+  "version": "1.0.0",
+  "zipName": "GTA_V_StoryMode_60FPS.zip",
+  "installer": false,
+  "game": {
+    "title": "Grand Theft Auto V",
+    "exe": ["GTA5.exe", "PlayGTAV.exe"],
+    "steamFolders": ["Grand Theft Auto V"],
+    "steamAppId": 3240220
+  },
+  "mods": [],
+  "config": [],
+  "localization": {
+    "title": "Русская озвучка GTA V",
+    "url": "https://boosty.to/synthvoiceru",
+    "note": "Полная озвучка — платная фанатская; в Steam доступны русские субтитры."
+  },
+  "notes": "GTA V работает в 60 FPS из коробки на современном ПК. Этот ZIP — не набор DLL, а стартовый гайд: настройки, ссылки на OpenIV/ScriptHookV и правила Story Mode."
+}

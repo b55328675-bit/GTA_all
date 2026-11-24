@@ -1,0 +1,187 @@
+{
+  "id": "gta-sa",
+  "name": "GTA San Andreas — CJ Edition",
+  "version": "1.0.0",
+  "zipName": "GTA_SA_RU_60FPS.zip",
+  "game": {
+    "title": "Grand Theft Auto: San Andreas",
+    "exe": [
+      "gta_sa.exe",
+      "gta-sa.exe"
+    ],
+    "steamFolders": [
+      "Grand Theft Auto San Andreas"
+    ],
+    "steamAppId": 12120
+  },
+  "mods": [
+    {
+      "id": "silentpatch",
+      "name": "SilentPatch SA",
+      "author": "CookiePLMonster",
+      "license": "MIT",
+      "url": "https://github.com/CookiePLMonster/SilentPatch/releases/download/1.1-BUILD34.1-SA/SilentPatchSA.zip",
+      "size": 229397,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Физика, мышь, вылеты и сотни багов."
+    },
+    {
+      "id": "widescreen",
+      "name": "WidescreenFix SA",
+      "author": "ThirteenAG",
+      "license": "MIT",
+      "url": "https://github.com/ThirteenAG/WidescreenFixesPack/releases/download/gtasa/GTASA.WidescreenFix.zip",
+      "size": 8037059,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "16:9, 16:10 и 21:9 без растяжения."
+    },
+    {
+      "id": "project2dfx",
+      "name": "Project2DFX SA",
+      "author": "ThirteenAG",
+      "license": "MIT",
+      "url": "https://github.com/ThirteenAG/III.VC.SA.IV.Project2DFX/releases/download/gtasa/SA.Project2DFX.zip",
+      "size": 3972984,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Короны огней на дальних объектах."
+    },
+    {
+      "id": "skygfx",
+      "name": "SkyGfx SA",
+      "author": "aap / The Hero",
+      "license": "MIT",
+      "url": "https://github.com/aap/skygfx/releases/download/v4.2b/SkyGfx_SA_4.2b.zip",
+      "size": 815522,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "README*",
+        "*.md",
+        "*.txt"
+      ],
+      "note": "Графика PS2/Xbox для San Andreas."
+    },
+    {
+      "id": "cleo",
+      "name": "CLEO 5 + Ultimate ASI Loader",
+      "author": "cleolibrary / ThirteenAG",
+      "license": "MIT",
+      "url": "https://github.com/cleolibrary/CLEO5/releases/download/v5.5.1/SA.CLEO-v5.5.1%2BUltimate_ASI_Loader.zip",
+      "size": 2640728,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "CLEO 5 и загрузчик .asi в одном архиве."
+    },
+    {
+      "id": "modloader",
+      "name": "ModLoader",
+      "author": "thelink2012",
+      "license": "MIT",
+      "url": "https://github.com/thelink2012/modloader/releases/download/v0.3.10/modloader.zip",
+      "size": 2691555,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Установка модов папками, без замены файлов."
+    },
+    {
+      "id": "framerate",
+      "name": "Framerate Vigilante Steam",
+      "author": "isaaccandido",
+      "license": "MIT",
+      "url": "https://github.com/isaaccandido/FramerateVigilante-SA-Steam/releases/download/v1.0.1/FramerateVigilanteSteam-v1.0.1.zip",
+      "size": 124952,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Порт фикса 60 FPS для Steam-версии."
+    }
+  ],
+  "config": [
+    {
+      "file": "scripts/GTASA.WidescreenFix.ini",
+      "values": {
+        "ResX": "1920",
+        "ResY": "1080",
+        "ForceMultiSamplingLevel": "0"
+      }
+    },
+    {
+      "file": "FramerateVigilanteSteam.ini",
+      "values": {
+        "FPSlimit": "60"
+      }
+    }
+  ],
+  "localization": {
+    "title": "Русская озвучка Acrobat (одноголосая)",
+    "url": "https://www.playground.ru/gta_san_andreas/file/gta_san_andreas_polnaya_russkaya_ozvuchka-1008556",
+    "note": "Одноголосая любительская озвучка; текст — SanLtd 0.56 (только 1.00/1.01/2.00)."
+  },
+  "notes": "В настройках игры включите Frame Limiter — Framerate Vigilante Steam поднимет ограничение до 60 FPS. Пак рассчитан на Steam-версию GTA SA."
+}

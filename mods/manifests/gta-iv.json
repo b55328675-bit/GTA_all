@@ -1,0 +1,54 @@
+{
+  "id": "gta-iv",
+  "name": "GTA IV — Liberty City Fixed",
+  "version": "1.0.0",
+  "zipName": "GTA_IV_RU_60FPS.zip",
+  "game": {
+    "title": "Grand Theft Auto IV: The Complete Edition",
+    "exe": [
+      "GTAIV.exe",
+      "GTAIV.EFLC.exe"
+    ],
+    "steamFolders": [
+      "Grand Theft Auto IV",
+      "GTA IV",
+      "Grand Theft Auto IV Complete Edition"
+    ],
+    "steamAppId": 12210
+  },
+  "mods": [
+    {
+      "id": "fusionfix",
+      "name": "FusionFix 5.1.2",
+      "author": "ThirteenAG",
+      "license": "MIT",
+      "url": "https://github.com/ThirteenAG/GTAIV.EFLC.FusionFix/releases/download/v5.1.2/GTAIV.EFLC.FusionFix.zip",
+      "size": 213539085,
+      "install": [
+        {
+          "from": "*",
+          "to": ""
+        }
+      ],
+      "exclude": [
+        "*.md",
+        "*.txt",
+        "*.pdb",
+        "*.url"
+      ],
+      "note": "Стабильные 60 FPS, DXVK, исправленная гамма и меньше вылетов."
+    }
+  ],
+  "config": [
+    {
+      "file": "commandline.txt",
+      "text": "-norestrictions\n-nomemrestrict\n-frameLimit 1\n-refreshrate 60\n-renderquality 2\n-shadowdensity 4\n-texturequality 2\n-viewdistance 35\n-detailquality 35\n-width 1920\n-height 1080\n-fullscreen\n"
+    }
+  ],
+  "localization": {
+    "title": "Русский текст для GTA IV (Steam)",
+    "url": "https://libertycity.net/files/gta-4/130883-localization-for-gta-iv-steam.html",
+    "note": "Официальной русской озвучки в Steam-версии нет: только фанатские проекты. Текст — локализация 1C."
+  },
+  "notes": "FusionFix весит около 215 МБ и скачивается с GitHub. В commandline.txt прописан лимит 60 FPS (-frameLimit 1 при -refreshrate 60) и средние настройки графики; если у вас Legacy 1.0.7.0/1.0.8.0, дополнительно установите FusionFixLegacyAddon с официальной страницы."
+}
