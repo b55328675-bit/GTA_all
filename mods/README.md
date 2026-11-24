@@ -7,6 +7,7 @@
 | Пак | Что чинит | Скачать |
 |---|---|---|
 | GTA III — Classic HD | 60 FPS, широкоформат, SilentPatch, SkyGfx, CLEO | [ZIP](../dist/GTA_III_RU_60FPS.zip) |
+| **GTA III — The Definitive Edition** | Настройка 60 FPS без модов и озвучка для DE; без установщика | [Скачать ZIP](../dist/GTA_III_DE_60FPS_Guide.zip) |
 | GTA VC — Neon HD | 60 FPS, широкоформат, SilentPatch, SkyGfx, CLEO | [ZIP](../dist/GTA_VC_RU_60FPS.zip) |
 | GTA SA — CJ Edition | 60 FPS, широкоформат, SilentPatch, SkyGfx, CLEO | [ZIP](../dist/GTA_SA_RU_60FPS.zip) |
 | Classic Trilogy — всё сразу | Три установщика в одном архиве | [ZIP](../dist/GTA_Classic_Trilogy_RU_60FPS.zip) |

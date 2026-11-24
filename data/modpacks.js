@@ -50,6 +50,40 @@ window.GTA_MODPACKS = [
     },
     note: "Пак не содержит игровые файлы и озвучку. Установщик скачивает открытые моды с официальных GitHub-релизов и делает резервную копию. Framerate Vigilante ставится вручную: автор распространяет его не через GitHub Releases."
   },
+{
+  "id": "gta-iii-de",
+  "game": "gta-iii-de",
+  "title": "GTA III — The Definitive Edition",
+  "kicker": "Либерти-Сити в ремастере",
+  "badge": "Только DE · ПК",
+  "accent": "#50ddbd",
+  "accent2": "#143d58",
+  "version": "1.0.0",
+  "size": "меньше 1 МБ",
+  "download": "dist/GTA_III_DE_60FPS_Guide.zip",
+  "description": "Для 60 FPS обязательных модов нет. Начните с настроек игры, а фанатскую озвучку ставьте отдельно, только если хотите слышать русскую речь.",
+  "features": [
+    "Лимит 60 FPS и проверка плавности",
+    "Субтитры или отдельная озвучка",
+    "Резервная копия и откат"
+  ],
+  "localizationLabel": "Озвучка для DE",
+  "localization": {
+    "title": "Русская озвучка WuzVoice для GTA III DE",
+    "url": "https://libertycity.ru/articles/other/8689-russkie-ozvuchki-igr-serii-gta.html",
+    "note": "В разделе про GTA III выберите загрузку для Definitive Edition, не для классики."
+  },
+  "mods": [
+    {
+      "name": "Подборка русских озвучек",
+      "author": "LibertyCity",
+      "license": "Обзор",
+      "url": "https://libertycity.ru/articles/other/8689-russkie-ozvuchki-igr-serii-gta.html"
+    }
+  ],
+  "steps": [],
+  "note": "Это памятка для ПК, а не установщик. Не копируйте файлы из Classic HD и не запускайте Install.cmd."
+},
   {
     id: "gta-vc",
     localizationLabel: "Русская озвучка",

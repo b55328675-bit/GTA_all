@@ -383,6 +383,7 @@ foreach ($exe in $ExeNames) {
 if (-not $exeFound) {
     if (($Manifest.id -in @('gta-iii', 'gta-vc', 'gta-sa')) -and ($GamePath -match 'Definitive[ _-]+Edition')) {
         Write-Warn "Вы выбрали Definitive Edition. Этот пакет предназначен только для классического издания. Моды не установлены."
+        if ($Manifest.id -eq "gta-iii") { Write-Warn "Для ремастера скачайте GTA_III_DE_60FPS_Guide.zip из папки dist репозитория." }
         exit 1
     }
     Write-Warn "Для игры $($Manifest.game.title) нужна папка с файлом: $($ExeNames -join ' или '). Проверьте издание и путь. Моды не установлены."

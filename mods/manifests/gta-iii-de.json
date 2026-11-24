@@ -1,0 +1,22 @@
+{
+  "id": "gta-iii-de",
+  "name": "GTA III — The Definitive Edition",
+  "version": "1.0.0",
+  "zipName": "GTA_III_DE_60FPS_Guide.zip",
+  "installer": false,
+  "game": {
+    "title": "GTA III — The Definitive Edition",
+    "exe": [
+      "LibertyCity.exe"
+    ],
+    "steamAppId": 1546970
+  },
+  "mods": [],
+  "config": [],
+  "localization": {
+    "title": "Русская озвучка WuzVoice для GTA III DE",
+    "url": "https://libertycity.ru/articles/other/8689-russkie-ozvuchki-igr-serii-gta.html",
+    "note": "В разделе про GTA III выберите загрузку для Definitive Edition, не для классики."
+  },
+  "notes": "Это памятка для ПК, а не установщик. Не копируйте файлы из Classic HD и не запускайте Install.cmd."
+}

@@ -10,7 +10,7 @@
 |---|---|
 | `index.html` | одностраничный сайт: таймлайн, архив всех игр, издания, мод-паки, FAQ |
 | `data/games.js` | 16 игр: даты, сеттинг, герой, длительность, Steam, советы |
-| `data/modpacks.js` | описания пяти мод-паков и ссылки на скачивание |
+| `data/modpacks.js` | описания пакетов и ссылки на скачивание |
 | `assets/` | стили, скрипты, SVG-графика (без внешних зависимостей) |
 | `mods/manifests/` | JSON-манифесты: какие моды ставить, куда и с какими конфигами |
 | `mods/common/` | установщик `Install.ps1`, `Uninstall.ps1` и README |
@@ -37,6 +37,7 @@ python3 -m http.server 8080
 | Пак | Что делает | Скачать |
 |---|---|---|
 | **GTA III — Classic HD** | 60 FPS, широкоформат, SilentPatch, SkyGfx, CLEO | `dist/GTA_III_RU_60FPS.zip` |
+| **GTA III — The Definitive Edition** | Настройка 60 FPS без модов и озвучка для DE; без установщика | [Скачать ZIP](dist/GTA_III_DE_60FPS_Guide.zip) |
 | **GTA VC — Neon HD** | 60 FPS, широкоформат, SilentPatch, SkyGfx, CLEO | `dist/GTA_VC_RU_60FPS.zip` |
 | **GTA SA — CJ Edition** | 60 FPS через Framerate Vigilante, SkyGfx, ModLoader | `dist/GTA_SA_RU_60FPS.zip` |
 | **Classic Trilogy** | три установщика в одном архиве | `dist/GTA_Classic_Trilogy_RU_60FPS.zip` |
