@@ -381,7 +381,12 @@ foreach ($exe in $ExeNames) {
     }
 }
 if (-not $exeFound) {
-    throw "None of the expected executables were found in: $GamePath"
+    if (($Manifest.id -in @('gta-iii', 'gta-vc', 'gta-sa')) -and ($GamePath -match 'Definitive[ _-]+Edition')) {
+        Write-Warn "Вы выбрали Definitive Edition. Этот пакет предназначен только для классического издания. Моды не установлены."
+        exit 1
+    }
+    Write-Warn "Для игры $($Manifest.game.title) нужна папка с файлом: $($ExeNames -join ' или '). Проверьте издание и путь. Моды не установлены."
+    exit 1
 }
 
 if ($DryRun) {
